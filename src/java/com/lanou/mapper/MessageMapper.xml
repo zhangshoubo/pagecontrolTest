@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lanou.mapper.MessageMapper">
+    <resultMap id="MesMap" type="Message">
+        <id column="id" property="id"/>
+        <result column="content" property="content"/>
+        <result column="up" property="up"/>
+        <result column="down" property="down"/>
+    </resultMap>
+
+    <select id="findAllMessage" resultMap="MesMap">
+        SELECT  * FROM  message
+     </select>
+    <insert id="insertMessage" useGeneratedKeys="true" keyProperty="id" >
+        INSERT INTO message VALUES (NULL ,#{content},#{up},#{down})
+
+    </insert>
+
+    <delete id="deleteMessage">
+        DELETE FROM message WHERE id=#{id}
+    </delete>
+
+
+
+
+</mapper>
