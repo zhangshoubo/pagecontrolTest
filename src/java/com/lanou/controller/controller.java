@@ -74,6 +74,16 @@ public class controller {
         return pageInfo;
     }
 
+    @RequestMapping(value = "/test")
+    @ResponseBody
+    public String gittest(){
+        return "bbb";
+    }
+    //编辑代码
+    @RequestMapping(value = "/branch")
+    public String brantest(){
+        return "branch";
+    }
 
 
 }
