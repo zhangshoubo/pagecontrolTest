@@ -73,6 +73,9 @@ public class controller {
         PageInfo<Message> pageInfo = service.queryPage(1, 2);
         return pageInfo;
     }
+    public void test(){
+        System.out.println("1111");
+    }
 
 
 
