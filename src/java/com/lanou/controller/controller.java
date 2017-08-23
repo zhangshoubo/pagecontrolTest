@@ -87,6 +87,7 @@ public class controller {
     public String brantest(){
 
         //AAAAAAAAAAAAAAA
+        System.out.println("测试冲突");
         return "branch";
     }
 
