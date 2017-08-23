@@ -3,6 +3,7 @@ package com.lanou.controller;
 import com.github.pagehelper.PageInfo;
 import com.lanou.bean.Message;
 import com.lanou.service.MessageService;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -85,8 +86,8 @@ public class controller {
     //编辑代码
     @RequestMapping(value = "/branch")
     public String brantest(){
+        System.out.println("测试冲突");
         return "branch";
     }
-
 
 }
