@@ -73,23 +73,7 @@ public class controller {
         PageInfo<Message> pageInfo = service.queryPage(1, 2);
         return pageInfo;
     }
-    public void test(){
-        System.out.println("1111");
-    }
 
-    @RequestMapping(value = "/test")
-    @ResponseBody
-    public String gittest(){
-        return "bbb";
-    }
-    //编辑代码
-    @RequestMapping(value = "/branch")
-    public String brantest(){
-
-        //AAAAAAAAAAAAAAA
-        System.out.println("测试冲突");
-        return "branch";
-    }
 
 
 }
